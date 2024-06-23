@@ -1,9 +1,12 @@
+import { CssBaseline } from "@mui/material";
+import Login from "./Login";
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+       <CssBaseline />
+      <Login/>
+    </>
   );
 }
 
