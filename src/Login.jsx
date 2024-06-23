@@ -19,8 +19,8 @@ function Login() {
                Login     
             </Typography>
             <Box component='form' onSubmit={handleSubmit} sx={{ mt: 1, width: '100%' }}>
-               <TextField margin='normal' label='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)}fullWidth required/>           
-               <TextField margin='normal' label='Password' id='password' value={password} fullWidth required/> 
+               <TextField margin='normal' label='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} fullWidth required/>           
+               <TextField margin='normal' label='Password' id='password' value={password} onChange={(e) => setPassword(e.target.value) }   fullWidth required/> 
                <Button type='submit' variant='contained'>Login</Button>      
             </Box>          
           </CardContent>        
