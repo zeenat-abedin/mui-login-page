@@ -8,6 +8,7 @@ function Login() {
     function handleSubmit(e) {
         e.preventDefault()
         console.log('Email:', email)
+        console.log('Password:', password)
     }
 
   return (
