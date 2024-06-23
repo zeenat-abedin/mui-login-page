@@ -15,8 +15,8 @@ function Login() {
                Login     
             </Typography>
             <Box component='form' onSubmit={handleSubmit} sx={{ mt: 1, width: '100%' }}>
-               <TextField margin='normal' label='Email' fullWidth/>           
-               <TextField margin='normal' label='Password' fullWidth /> 
+               <TextField margin='normal' label='Email' fullWidth required/>           
+               <TextField margin='normal' label='Password' fullWidth required/> 
                <Button variant='contained'>Login</Button>      
             </Box>          
           </CardContent>        
