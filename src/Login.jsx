@@ -2,14 +2,25 @@ import { useState } from 'react'
 import { Box, Card, CardContent, Container, Typography, TextField, Button } from '@mui/material'
 
 function Login() {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  const [success, setSuccess] = useState(false)
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        console.log('Email:', email)
-        console.log('Password:', password)
-    }
+  function handleSubmit(e) {
+    e.preventDefault()
+    setError('')
+    setSuccess(false)
+
+    console.log('Email:', email)
+    console.log('Password:', password)
+
+    if (email === 'test@test.com' && password === '12345678') {
+      setSuccess(true)
+    } else {
+      setError('Invalid email or password')
+    }   
+  }
 
   return (
     <Container>
